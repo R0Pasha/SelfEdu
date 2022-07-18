@@ -23,14 +23,21 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
-      - name: Run a one-line script
+      - name: скрипт_1
         run: |
           echo Hello, world!
-          $pwd
+          $PWD
           ls -la
           
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it 
-      - uses: actions/checkout@v3
+      - name: checkout
+        uses: actions/checkout@v3
+      
+      - name: скрипт_2
+        run: |
+          echo Hello, world!
+          $PWD
+          ls -la
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
