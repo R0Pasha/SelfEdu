@@ -47,7 +47,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
 
-      - name: скрипт_1
+      - name: скрипт_1.1
         run: |
           echo Hello, world!
           pwd
