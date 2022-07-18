@@ -26,7 +26,7 @@ jobs:
       - name: скрипт_1
         run: |
           echo Hello, world!
-          $PWD
+          pwd
           ls -la
           
         # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it 
@@ -36,7 +36,7 @@ jobs:
       - name: скрипт_2
         run: |
           echo Hello, world!
-          $PWD
+          pwd
           ls -la
 
       # Runs a single command using the runners shell
