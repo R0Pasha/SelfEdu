@@ -31,9 +31,10 @@ jobs:
       - name: Install deps
         run: |
          python -m pip install --upgrade pip
+         python -r ${{ env.Python_file }}
 
       # Runs a single command using the runners shell
-      - name: Run a Python script 
-        run: ${{ env.Python_file }}
+    #  - name: Run a Python script 
+     #   run: ${{ env.Python_file }}
 
    
