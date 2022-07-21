@@ -2,7 +2,7 @@
 
 name: My_experiments_in_Python_script
 env:
-  Python_file: python3 my_python_exp.py
+  Python_file: python3 my_experiments/my_python_exp.py
 
 # Controls when the workflow will run
 on:
