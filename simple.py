@@ -1,5 +1,5 @@
-x = int(input("Введите первое число:"))
-y = int(input("Введите второе число:"))
+x = int(input("Введите первое  число:"))
+y = int(input("Введите второе  число:"))
 numbers = [x,y]
 numbers.sort (reverse=True)
 while numbers[0]>=numbers[1]:
