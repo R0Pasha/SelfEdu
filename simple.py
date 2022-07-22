@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*- 
-x = int(input("Введите первое число:"))
-y = int(input("Введите второе число:"))
+x = VAR_1
+y = VAR_2
 numbers = [x,y]
 numbers.sort (reverse=True)
 while numbers[0]>=numbers[1]:
