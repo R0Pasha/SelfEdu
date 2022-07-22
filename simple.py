@@ -1,3 +1,4 @@
+# This Python file uses the following encoding: utf-8
 x = int(input("Введите первое  число:"))
 y = int(input("Введите второе  число:"))
 numbers = [x,y]
