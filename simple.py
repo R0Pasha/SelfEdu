@@ -1,5 +1,5 @@
-#!/usr/bin/python
-# -*- coding: UTF-8 -*- 
+from io import StringIO
+from dotenv import load_dotenv 
 x = VAR_1
 y = VAR_2
 numbers = [x,y]
