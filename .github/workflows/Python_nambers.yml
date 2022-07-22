@@ -35,7 +35,7 @@ jobs:
       
       - name: Install deps
         run: |
-         python -m python-dotenv
+       #  python -m python-dotenv
          python -h ${{ env.Python_file }}
 
       # Runs a single command using the runners shell   
