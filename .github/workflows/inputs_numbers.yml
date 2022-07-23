@@ -19,6 +19,7 @@ on:
         description: 'Number one'
         required: true
         type: integer
+        default: flo
       Number_two: # id of input
         description: 'Number two'
         required: true
