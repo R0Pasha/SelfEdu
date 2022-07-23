@@ -14,7 +14,15 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-
+    inputs:
+      Number_one:
+        description: 'Number one'
+        required: true
+        type: integer
+      Number_two:
+        description: 'Number two'
+        required: true
+        type: integer
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -22,9 +30,9 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     
-    env: 
-      x: 40
-      y: 55
+    #env: 
+     # x: 40
+      #y: 55
     # Steps represent a sequence of tasks that will be executed as part of the job 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it 
@@ -32,4 +40,4 @@ jobs:
       
       # Runs a single command using the runners shell   
       - name: Run a Python script 
-        run: python3 ${{ env.Python_file }} ${{ env.x }} ${{ env.y }}
+        run: python3 ${{ env.Python_file }} ${{ inputs.Number one }} ${{ inputs.Number two }}
