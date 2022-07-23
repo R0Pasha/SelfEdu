@@ -17,13 +17,14 @@ on:
    inputs:
       Number_one: # id of input
         description: 'Who to greet'
-        required: true
-        type: string
-        default: flo
+        required: false
+        type: integer
+        default: '44'
       Number_two: # id of input
         description: 'Number two'
-        required: true
-        type: integer   
+        required: false
+        type: integer 
+        default: '58'
       
  
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -42,8 +43,8 @@ jobs:
       - uses: actions/checkout@v3
       
       # Runs a single command using the runners shell   
-      - name: Run a Python script
-        run:   echo "deploy_target is ${{ inputs.Number_one }}"
+     # - name: Run a Python script
+    #    run:   echo "deploy_target is ${{ inputs.Number_one }}"
         
       - name: Run a Python script 
         run: python3 ${{ env.Python_file }} ${{ inputs.Number_one }} ${{ inputs.Number_two }}
