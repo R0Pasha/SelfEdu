@@ -4,7 +4,7 @@ name: Python_nambers
 
 # Controls when the workflow will run
 env:
-  Python_file: nambers_file.py
+  Python_file: simple.py
 
 # Controls when the workflow will run
 on:
