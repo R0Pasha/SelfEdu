@@ -40,4 +40,4 @@ jobs:
       
       # Runs a single command using the runners shell   
       - name: Run a Python script 
-        run: python3 ${{ env.Python_file }} ${{ inputs.Number one }} ${{ inputs.Number two }}
+        run: python3 ${{ env.Python_file }} ${{ inputs.Number_one }} ${{ inputs.Number_two }}
