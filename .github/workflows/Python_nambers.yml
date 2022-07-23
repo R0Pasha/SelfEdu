@@ -4,13 +4,13 @@ name: Python_nambers
 
 # Controls when the workflow will run
 env:
-  Python_file: simple.py
+  Python_file: nambers_file.py
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch  
   push: 
-    branches: [ "main" ]
+    branches: [ "main", "my_experiments" ]
   pull_request:
     branches: [ "main" ]
 
