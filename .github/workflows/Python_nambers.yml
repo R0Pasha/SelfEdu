@@ -4,7 +4,7 @@ name: Python_nambers
 
 # Controls when the workflow will run
 env:
-  Python_file: nambers_file.py
+  Python_file: simple.py
 
 # Controls when the workflow will run
 on:
@@ -36,8 +36,8 @@ jobs:
       - name: Install deps
         run: |
        #  python -m python-dotenv
-         python -h ${{ env.Python_file }}
+       #  python -h ${{ env.Python_file }}
 
       # Runs a single command using the runners shell   
       - name: Run a Python script 
-        run: python3 ${{ env.Python_file }}
+        run: python3 ${{ env.Python_file }} ${{ env.x }} ${{ env.y }}
