@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
    inputs:
       Number_one: # id of input
-        description: 'Number one'
+        description: 'Enter the first number'
         required: true
         type: integer
         default: flo
