@@ -25,8 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     
     env: 
-      x: ${{ env.Python_file }} 40
-      y: ${{ env.Python_file }} 55
+      x: 40
+      y: 55
     # Steps represent a sequence of tasks that will be executed as part of the job 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it 
@@ -40,4 +40,4 @@ jobs:
 
       # Runs a single command using the runners shell   
       - name: Run a Python script 
-        run: python3 ${{ env.Python_file }}
+        run: python3 ${{ env.Python_file }} ${{ env.x }} ${{ env.y }}
