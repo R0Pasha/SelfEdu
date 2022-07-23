@@ -1,6 +1,8 @@
 name: workflows_dispatch_call
 on:
-  workflow_dispatch:
+ push: 
+    branches: [ "main"]
+ workflow_dispatch:
     inputs:
       build_id:
         description: 'Build id is string'
@@ -13,7 +15,7 @@ on:
       perform_deploy:
         required: false
         type: boolean
-  workflow_call:
+ workflow_call:
     inputs:
       build_id:
         required: true
