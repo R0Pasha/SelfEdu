@@ -1,9 +1,8 @@
-#!/usr/bin/python
+#!/usr/bin/bash
 # -*- coding: UTF-8 -*-
-from io import StringIO
-from dotenv import load_dotenv 
-x = VAR_1
-y = VAR_2
+import sys
+x = int(sys.argv[1])
+y = int(sys.argv[2])
 numbers = [x,y]
 numbers.sort (reverse=True)
 while numbers[0]>=numbers[1]:
