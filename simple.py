@@ -1,5 +1,4 @@
 import sys
-from tkinter import W
 q = str(sys.argv[1])
 w = str(sys.argv[2])
 x = int(q)
