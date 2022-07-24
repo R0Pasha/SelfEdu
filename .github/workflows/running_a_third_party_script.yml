@@ -6,7 +6,7 @@ on:
 jobs:
   call-workflow:
     uses: ./.github/workflows/inputs_numbers.yml
-    with:
+    with: 
       Number_one: 77
       Number_two: 98
       
