@@ -16,12 +16,12 @@ on:
   workflow_dispatch:
    inputs:
       Number_one: # id of input
-        description: 'Number_one'
+        description: 'Who to greet'
         required: false
         type: integer
         default: '44'
       Number_two: # id of input
-        description: 'Number_two'
+        description: 'Number two'
         required: false
         type: integer 
         default: '58'
