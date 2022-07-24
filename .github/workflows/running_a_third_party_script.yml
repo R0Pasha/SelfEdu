@@ -7,12 +7,12 @@ on:
       Number_one: # id of input
         description: 'Who to greet'
         required: false
-        type: integer
+        type: string
         default: '100'
       Number_two: # id of input
         description: 'Number two'
         required: false
-        type: integer 
+        type: string 
         default: '76'
     
 jobs:
