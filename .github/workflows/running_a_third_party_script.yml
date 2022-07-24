@@ -1,0 +1,17 @@
+name: running_a_third_party_script
+on:
+  push:
+    branches: [feature/remoute_ran]
+    
+jobs:
+  call:
+    uses: ./.github/workflows/inputs_numbers.yaml
+    with:
+      Number_one: '32'
+      Number_two: '87'
+          
+      
+      
+      
+      
+      
