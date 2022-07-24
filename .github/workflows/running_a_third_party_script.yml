@@ -5,7 +5,7 @@ on:
     
 jobs:
   call:
-    uses: ./.github/workflows/inputs_numbers.yaml
+    uses: ./.github/workflows/inputs_numbers.yml
     with:
       Number_one: '32'
       Number_two: '87'
