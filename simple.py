@@ -1,6 +1,9 @@
 import sys
-x = int(sys.argv[1])
-y = int(sys.argv[2])
+from tkinter import W
+q = str(sys.argv[1])
+w = str(sys.argv[2])
+x = int(q)
+y = int(w)
 numbers = [x,y]
 numbers.sort (reverse=True)
 while numbers[0]>=numbers[1]:
