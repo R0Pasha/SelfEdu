@@ -1,8 +1,6 @@
 import sys
-q = str(sys.argv[1])
-w = str(sys.argv[2])
-x = int(q)
-y = int(w)
+x = int(sys.argv[1])
+y = int(sys.argv[2])
 numbers = [x,y]
 numbers.sort (reverse=True)
 while numbers[0]>=numbers[1]:
