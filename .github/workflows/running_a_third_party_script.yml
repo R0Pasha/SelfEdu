@@ -7,9 +7,9 @@ jobs:
   call:
     uses: ./.github/workflows/inputs_numbers.yml
     with:
-      build_id: build_from_call
-      deploy_target: target_from_call
-      perform_deploy: true
+      Number_one: 77
+      Number_two: 98
+      
 
           
       
