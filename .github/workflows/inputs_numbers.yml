@@ -19,12 +19,12 @@ on:
       Number_one: # id of input
         description: 'Who to greet'
         required: false
-        type: number
+        type: string
         default: 44
       Number_two: # id of input
         description: 'Number two'
         required: false
-        type: number 
+        type: string 
         default: 58
       
  
