@@ -4,7 +4,7 @@ on:
     branches: [feature/remoute_ran]
     
 jobs:
-  call:
+  call-workflow:
     uses: ./.github/workflows/inputs_numbers.yml
     with:
       Number_one: 77
