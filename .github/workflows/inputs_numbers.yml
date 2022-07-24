@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
    inputs:
       Number_one: # id of input
-        description: 'Who to greet'
+        description: 'Number one'
         required: false
         type: integer
         default: '44'
