@@ -1,6 +1,6 @@
 
 name: start_2_repositories
-
+  
 on:
   
   push:
@@ -18,7 +18,10 @@ jobs:
           owner: R0Pasha
           repo: hello-world-docker-action
           workflow_file_name: Script_for_workflow.py
-
+          
+      - name: Run a Python script 
+        run: python3 ${{ env.workflow_file_name }}
+        
       - name: Run a heppy script
         run: |
           echo "heppy"
