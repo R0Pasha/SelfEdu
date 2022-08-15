@@ -17,7 +17,6 @@ jobs:
         with:
           owner: R0Pasha
           repo: hello-world-docker-action
-          github_token: ${{   }}
           workflow_file_name: Script_for_workflow.py
 
       - name: Run a heppy script
