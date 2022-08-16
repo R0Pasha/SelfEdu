@@ -13,16 +13,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - name: Build Web App
+        run: |
+         echo "Build Web App"
+         sleep 10s
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
         with:
           owner: R0Pasha
           repo: hello-world-docker-action
-          workflow_file_name: Script_for_workflow.py
-          
-      - name: Run a Python script 
-        run: python3 ${{ env.workflow_file_name }}
+          github_token: ${{ secrets.G_ACCESS_TOKEN }}
+          workflow_file_name: CI.yml
         
       - name: Run a heppy script
         run: |
           echo "heppy"
+          sleep 10s
       
