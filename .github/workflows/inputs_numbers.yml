@@ -20,12 +20,12 @@ on:
         description: 'Who to greet'
         required: false
         type: string
-        default: 44
+        default: '44'
       Number_two: # id of input
         description: 'Number two'
         required: false
         type: string 
-        default: 58
+        default: '58'
       
  
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
