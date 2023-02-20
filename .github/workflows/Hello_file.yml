@@ -35,4 +35,4 @@ jobs:
          
       - name: Run script 
 
-        run: print (x, ${{ inputs.Number_one }})
+        run: print (x)
