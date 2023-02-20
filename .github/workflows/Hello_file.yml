@@ -16,7 +16,7 @@ on:
   workflow_dispatch:
   workflow_call:
    inputs:
-      Name: # id of input
+      Name_one: # id of input
         description: 'Enter name'
         required: false
         type: string
@@ -39,4 +39,4 @@ jobs:
       
         
       - name: Run a Python script 
-        run: python3 ${{ env.Python_file }} ${{ inputs.Number_one }} 
+        run: python3 ${{ env.Python_file }} ${{ inputs.Name_one }} 
