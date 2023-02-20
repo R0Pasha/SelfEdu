@@ -1,0 +1,34 @@
+
+name: start_2_repositories
+  
+on:
+  
+  push:
+    branches: [ "my_exp" ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Run script 2 workflow
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Build Web App
+        run: |
+         echo "Build Web App"
+         sleep 10s
+      - uses: convictional/trigger-workflow-and-wait@v1.3.0
+        with:
+          owner: R0Pasha
+          repo: hello-world-docker-action
+          github_token: ${{ secrets.G_ACCESS_TOKEN }}
+          workflow_file_name: CI.yml
+          ref: main
+   
+  
+
+      - name: Run a heppy script
+        run: |
+          echo "heppy"
+          sleep 10s
+      
