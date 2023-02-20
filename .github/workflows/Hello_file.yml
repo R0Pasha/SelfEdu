@@ -20,7 +20,7 @@ on:
         description: 'Enter name'
         required: false
         type: string
-        default: Maksim
+        default: 'Maksim'
       
       
  
