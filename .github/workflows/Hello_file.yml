@@ -18,7 +18,7 @@ on:
    inputs:
       Name_one: # id of input
         description: 'Enter name'
-        required: false
+        required: true
         type: string
         default: 'Maksim'
       
