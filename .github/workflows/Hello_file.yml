@@ -32,8 +32,8 @@ jobs:
     runs-on: ubuntu-latest
     
    
-    steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it 
+    steps: 
+      - name: git clone my repositories 
       - uses: actions/checkout@v3
       
       
