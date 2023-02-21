@@ -1,8 +1,8 @@
 name: Hello_file
 
 # Controls when the workflow will run
-#env:
-  #Python_file: Hello.py
+env:
+  Python_file: Hello.py
 
 # Controls when the workflow will run
 on:
@@ -39,4 +39,4 @@ jobs:
       
         
       - name: Run a Python script 
-        run: echo "Hello ${{ inputs.Name_one }}" 
+        run: python3 ${{ env.Python_file }} ${{ inputs.Name_one }} 
