@@ -33,7 +33,7 @@ jobs:
     
    
     steps: 
-      - name: git clone my repositories 
+     # - name: git clone my repositories 
       - uses: actions/checkout@v3
       
       
