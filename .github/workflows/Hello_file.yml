@@ -39,4 +39,4 @@ jobs:
       
         
       - name: Run a Python script 
-        run: echo "Hello" ${{ inputs.Name_one }} 
+        run: echo "Hello ${{ inputs.Name_one }}" 
