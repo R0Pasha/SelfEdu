@@ -2,7 +2,7 @@ name: Hello_file
 
 # Controls when the workflow will run
 env:
-  Python_file: Hello.py
+  PowerShell_file: Hellofile.ps1
 
 # Controls when the workflow will run
 on:
@@ -27,7 +27,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  Hello_file:
+  Run_Hellofile:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     
@@ -38,5 +38,6 @@ jobs:
       
       
         
-      - name: Run a Python script 
-        run: python3 ${{ env.Python_file }} ${{ inputs.Name_one }} 
+      - name: Run a PowerShell script
+        shell: pwsh
+        run: ${{ env.PowerShell_file }} ${{ inputs.Name_one }} 
