@@ -1,0 +1,37 @@
+name: Hello_file_Web
+
+# Controls when the workflow will run
+env:
+  PowerShell_file: .\Hellofile.ps1
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch   
+  repository_dispatch:
+    types: [on-demand-test]
+  inputs:
+      Name_one: # id of input
+        description: 'Enter_name'
+        required: true  
+        type: string
+        default: 'Maksim'
+      
+      
+ 
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  Run_Hellofile:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    
+   
+    steps: 
+     # git clone my repositories 
+      - uses: actions/checkout@v3
+      
+      
+        
+      - name: Run a PowerShell script
+        shell: pwsh
+        run: ${{ env.PowerShell_file }} ${{ inputs.Name_one }} 
