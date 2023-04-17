@@ -8,5 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: скрипт_1
-        run: 
-          echo Hello, world!
+        run: echo Hello, world!
