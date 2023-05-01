@@ -19,7 +19,7 @@ on:
     inputs:
       Name_one: # id of input
         description: 'Enter_name'
-        required: true  
+        required: false  
         type: string
         default: 'Pasha'
   workflow_call:
