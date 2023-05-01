@@ -1,7 +1,7 @@
 name: Hello_file_Web
 on:
   repository_dispatch:
-    types: [test_result]
+    types: [Pasha121]
 
 jobs:
   run_if_failure:
