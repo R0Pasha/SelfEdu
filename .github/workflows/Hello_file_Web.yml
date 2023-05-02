@@ -10,4 +10,4 @@ jobs:
     steps:
       - env:
           MESSAGE: ${{ github.event.client_payload.message }}
-        run: echo $MESSAGE
+        run: echo ${{ env.MESSAGE }}
