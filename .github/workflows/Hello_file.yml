@@ -38,14 +38,13 @@ jobs:
   Run_Hellofile:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
-   
     steps: 
      # git clone my repositories 
+      - name: Dump GitHub context
+        run: echo '${{ toJSON(github) }}'
+        
       - uses: actions/checkout@v3
       
-      
-        
       - name: Run a PowerShell script
         shell: pwsh
         run: ${{ env.PowerShell_file }} ${{ inputs.Name_one }} 
