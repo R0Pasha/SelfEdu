@@ -55,7 +55,7 @@ jobs:
         run: echo $MESSAGE
         
       - name: Write MESSAGE
-        run: echo '${{ github.repository.events_url }}'
+        run: echo '${{ github.repository.name }}'
 
       - uses: actions/checkout@v3
       
