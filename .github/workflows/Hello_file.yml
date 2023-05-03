@@ -49,6 +49,13 @@ jobs:
       - name: Dump GitHub context
         run: echo '${{ toJSON(github) }}'
         
+      - env:
+          MESSAGE: ${{ github.event.client_payload.message }}
+        run: echo $MESSAGE
+        
+      - name: Write MESSAGE
+        run: echo '${{ github.event.client_payload.message }}'
+
       - uses: actions/checkout@v3
       
       - name: Run a PowerShell script
